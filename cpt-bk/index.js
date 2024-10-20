@@ -36,7 +36,7 @@ app.post('/chat', async (req, res) => {
         }
       }
     );
-
+ 
     // Return the response from ChatGPT API
     res.send(response.data.choices[0].text);
   } catch (error) {
